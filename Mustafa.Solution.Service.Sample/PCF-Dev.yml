@@ -10,5 +10,5 @@ applications:
   timeout: 200
   env:
     ENVIRONMENT: 'DEV'
-    http_proxy: http://proxy.ins.dell.com
+    http_proxy: 
     
