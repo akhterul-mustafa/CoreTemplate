@@ -1,0 +1,14 @@
+---
+applications:
+- name: SampleService-DEV
+  stack: cflinuxfs2
+  instances: 1
+  memory: 256M
+  disk_quota: 512M
+  health-check-type: http
+  health-check-http-endpoint: /
+  timeout: 200
+  env:
+    ENVIRONMENT: 'DEV'
+    http_proxy: http://proxy.ins.dell.com
+    
